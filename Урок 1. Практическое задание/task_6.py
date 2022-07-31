@@ -21,10 +21,10 @@
 """
 a = int(input("Первый день тренировок в км: "))
 b = int(input("Желаемые результат в км: "))
-day = 1
-print(f"{day}-й день:{a}")
+day_num = 1
+print(f"{day_num}-й день:{a}")
 while a <= b:
-    day = day + 1
+    day_num = day_num + 1
     a = round(a + (a * 10 / 100), 2)
-    print(f"{day}-й день:{a}")
-print(f"на {day}-й день спортсмен достиг результата — не менее {b} км")
+    print(f"{day_num}-й день:{a}")
+print(f"на {day_num}-й день спортсмен достиг результата — не менее {b} км")
